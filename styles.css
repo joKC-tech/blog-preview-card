@@ -8,11 +8,6 @@
     --font-size-12-14: clamp(0.75rem, 0.5938rem + 0.5vw, 0.875rem);
     --font-size-14-16: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
     --font-size-20-24: clamp(1.25rem, 0.9375rem + 1vw, 1.5rem);
-
-
-
-    margin: 0;
-    padding: 0;
 }
 
 * {
@@ -40,7 +35,7 @@ main {
 
 }
 
-section {
+article {
     max-width: 24em;
     width: 90vw;
     margin: auto;
@@ -56,6 +51,9 @@ section {
 
 .hero-image { 
     border-radius: 10px;
+    width: 100%; 
+    height: auto; 
+    display: block;
 }
 
 .card-content {
@@ -71,10 +69,13 @@ h1 a {
     font-weight: 800;
     text-decoration: none;
     color: var(--gray-950);
+    line-height: 150%;
 }
 
 h1 a:hover, h1 a:focus {
-    color: var(--yellow)
+    color: var(--yellow);
+    outline: 3px solid hsl(228 45% 44% / 0.9); 
+    outline-offset: 3px;
 }
 
 .tag {
@@ -86,7 +87,7 @@ h1 a:hover, h1 a:focus {
 
 }
 
-.date {
+time {
     font-size: var(--font-size-12-14);
     font-weight: 500;
 }
